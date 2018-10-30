@@ -4,7 +4,7 @@ App Form
 
 ##Made by Priscille de la Tour @Pris Vivien Richaud @Vivien
 
-This project are the first pages of our great app The Gossip Project which will revolutionize the web world!
+This project are the first pages of our great app The App formualire which will revolutionize the web world!
 
 ##Requirements:
 
