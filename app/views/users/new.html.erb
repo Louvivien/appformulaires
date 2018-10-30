@@ -1,0 +1,72 @@
+<h1>Ma jolie page de formulaire</h1>
+
+
+
+<p>Voici mon formulaire form for</p>
+
+
+
+
+
+<%= form_for @user, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+  Username: <%= f.text_field :username %><br />
+  Bio: <%= f.text_area :bio, size: "60x12" %><br />
+  Email: <%= f.text_field :email %><br />
+  <%= f.submit "Create" %>
+<% end %>
+
+
+<p>Voici mon formulaire form tag</p>
+
+
+
+
+<!-- ... -->
+
+    <%= form_tag url_for(action: 'create'), method: "post" do %>
+
+      <%= label_tag 'Username' %>
+      <%= text_field_tag '', "username" %>
+      <br /> <br />
+
+      <%= label_tag 'Bio' %>
+      <%= text_area_tag '', "bio" %>
+      <br /> <br />
+
+      <%= label_tag 'Email' %>
+      <%= text_field_tag '', "email" %>
+      <br /> <br />
+
+      <%= submit_tag "Create Post" %>
+
+    <% end %>
+
+    <!-- ... -->
+
+
+<p>Voici mon formulaire form action</p>
+
+
+
+
+
+
+<form action="/users/create" method="POST">
+
+Username:<br>
+  <input type="text" name="username">
+    <br>
+  Email:<br>
+    <input type="text" name="email">
+      <br>
+      Bio:<br>
+        <input type="text" name="bio">
+          <br>
+
+
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+
+
+  <input type="submit" value="Envoyer le formulaire">
+</form>
