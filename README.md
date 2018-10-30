@@ -1,24 +1,18 @@
-# README
+# App formulaire
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+App Form
 
-Things you may want to cover:
+##Made by Priscille de la Tour @Pris Vivien Richaud @Vivien
 
-* Ruby version
+This project are the first pages of our great app The Gossip Project which will revolutionize the web world!
 
-* System dependencies
+##Requirements:
 
-* Configuration
+Ruby version : 2.5.1
+Ruby on Rails version : 5.2.1
+Clone the repo on your local machine using git clone https://github.com/beeant8/Gossip_project_rails
 
-* Database creation
+Run bundle install
 
-* Database initialization
+##Online version:
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
